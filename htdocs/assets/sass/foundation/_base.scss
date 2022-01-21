@@ -1,0 +1,28 @@
+//***********************************************
+// サイトを構成する上で、デザインの基本の下地、土台となるスタイルを定義
+//***********************************************
+// フォントサイズをrem換算するための初期設定
+html {
+  font-size: 62.5%;
+  height: 100%;
+}
+
+// bodyのデフォルトを定義
+body {
+  height: 100%;
+  font-size: 1.6rem;
+  font-family: sans-serif;
+  font-weight: 300;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  line-height: 2;
+  color: #000;
+}
+
+// img要素の扱いを簡単にする
+img {
+  border-style: none; //IE10以前のリンク画像の枠線を削除
+  display: block; //ブロックに切り替えます。通常の画像に必要な操作です。
+  width: 100%; //デフォルトで画像をフレキシブルに。
+  height: auto; //max-widthが有効になっても、画像のアスペクト比を維持。
+}

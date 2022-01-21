@@ -1,0 +1,12 @@
+{
+  "recommendations": [
+    "ms-ceintl.vscode-language-pack-ja",
+    "oderwat.indent-rainbow",
+    "saikou9901.evilinspector",
+    "vscode-icons-team.vscode-icons",
+    "formulahendry.auto-complete-tag",
+    "christian-kohler.path-intellisense",
+    "mkaufman.htmlhint",
+    "ritwickdey.live-sass"
+  ]
+}

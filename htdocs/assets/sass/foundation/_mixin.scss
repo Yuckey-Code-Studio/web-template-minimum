@@ -1,0 +1,25 @@
+@charset "utf-8";
+//***********************************************
+// 関数定義
+//***********************************************
+/********** Break Point **********/
+$breakpoints: (
+  'sm': 'all and (min-width: 560px)',
+  'md': 'all and (min-width: 960px)',
+  'lg': 'all and (min-width: 1440px)',
+  'xl': 'all and (min-width: 1920px)',
+) !default;
+@mixin mq($breakpoint: md) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+
+
+
+/********** Retina **********/
+@mixin retina() {
+  @media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+    @content;
+  }
+}
